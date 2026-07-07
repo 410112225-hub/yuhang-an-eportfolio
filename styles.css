@@ -65,6 +65,11 @@ h3 {
   color: var(--navy);
 }
 
+ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -247,6 +252,30 @@ h3 {
   padding: 5rem 5vw;
 }
 
+.section-subtitle {
+  margin: 0.45rem 0 1.2rem;
+  color: #2a2f36;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.background-points {
+  margin: 1.25rem 0 1.35rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--gold);
+}
+
+.background-points strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--navy);
+}
+
+.background-points li {
+  margin: 0.18rem 0;
+  color: var(--muted);
+}
+
 .two-column,
 .feature-section {
   display: grid;
@@ -404,6 +433,10 @@ h3 {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   background: #ffffff;
+}
+
+.evidence-strip .section-intro {
+  grid-column: 1 / -1;
 }
 
 .evidence-strip figure {
