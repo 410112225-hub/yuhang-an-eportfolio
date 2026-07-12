@@ -411,7 +411,13 @@ ul {
 .goal-list {
   display: grid;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.goal-group-title {
+  margin-top: 1.7rem;
+  color: var(--green);
+  font-size: 1.05rem;
 }
 
 .goal-list article {
@@ -483,6 +489,25 @@ ul {
   background: #ffffff;
 }
 
+.cv-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.cv-downloads .button.secondary {
+  color: var(--navy);
+  border-color: var(--navy);
+  background: transparent;
+}
+
+.cv-downloads .button.secondary:hover,
+.cv-downloads .button.secondary:focus-visible {
+  color: #ffffff;
+  background: var(--navy);
+}
+
 .cv-layout {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -497,6 +522,36 @@ ul {
 .cv-block ul {
   margin: 0;
   padding-left: 1.15rem;
+}
+
+.references-section {
+  background: #f3eee5;
+}
+
+.reference-list {
+  max-width: 980px;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  overflow-wrap: anywhere;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 34px rgba(18, 28, 44, 0.07);
+}
+
+.reference-list p {
+  margin-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+
+.reference-list p:last-child {
+  margin-bottom: 0;
+}
+
+.reference-list a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .contact-section {
@@ -606,5 +661,9 @@ ul {
 
   .button {
     width: 100%;
+  }
+
+  .reference-list {
+    padding: 1.1rem;
   }
 }
